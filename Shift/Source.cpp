@@ -39,15 +39,15 @@ void main()
 	for (int i = 0; i < number_of_shifts; i++)
 	{
 		int buffer = arr[n - 1];
-		for (int i = 1;  i<n; i--)
+		for (int i = n - 1; i > 0; i--)
 		{
-			arr[i] = arr[i-1];
+			arr[i] = arr[i - 1];
 		}
 		arr[0] = buffer;
 	}
 #endif // RIGHT_SHIFT
 
-	
+
 	//Sleep(1000);
 	//system("CLS");
 
